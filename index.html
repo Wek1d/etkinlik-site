@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugothic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Ugothic</div>
+        <nav>
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Etkinlik</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-section">
+        <div class="transition-box">
+            <div class="event-create">
+                <p>Etkinlik Oluştur</p>
+                <div class="circle-button" onclick="scrollDown()">Etkinliğe Git</div>
+            </div>
+        </div>
+    </section>
+    <section class="event-section">
+        <div class="event-create-box">
+            <label for="event-date">Tarih:</label>
+            <input type="date" id="event-date" name="event-date">
+
+            <label for="event-time">Saat:</label>
+            <input type="time" id="event-time" name="event-time">
+
+            <label for="event-reason">Etkinlik Nedeni:</label>
+            <textarea id="event-reason" name="event-reason" rows="4"></textarea>
+
+            <button onclick="saveEvent()">Kaydet</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
